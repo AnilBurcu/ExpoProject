@@ -1,11 +1,16 @@
 import { NavigationContainer } from "@react-navigation/native";
 import RootNavigation from "./src/navigation/RootNavigation";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StatusBar } from "react-native";
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <RootNavigation />
-    </NavigationContainer>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#9ee4d4" }}>
+      <StatusBar barStyle={"dark-content"} />
+      <NavigationContainer>
+        <RootNavigation />
+      </NavigationContainer>
+    </SafeAreaView>
   );
 };
 
