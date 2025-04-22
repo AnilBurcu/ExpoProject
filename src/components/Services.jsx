@@ -1,4 +1,5 @@
 import { ScrollView, StyleSheet, Text, View, Image } from "react-native";
+import React from "react";
 import AmazonPay from "../assets/amazon-pay.png";
 import SendMoney from "../assets/send-money.jpg";
 import ScanQR from "../assets/scan-qr.jpeg";
@@ -41,7 +42,7 @@ const Services = () => {
       </View>
 
       {RecentSearchData.map((item) => (
-        <ServicesCard item={item} />
+        <ServicesCard key={item.id} item={item} />
       ))}
     </ScrollView>
   );

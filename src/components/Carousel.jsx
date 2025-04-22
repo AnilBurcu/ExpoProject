@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 import React from "react";
 import Swiper from "react-native-swiper";
 import { CarouselData } from "../data/CarouselData";
@@ -11,9 +11,9 @@ const Carousel = () => {
       showsPagination={false}
       style={styles.wrapper}
     >
-      {CarouselData.map((item, key) => (
-        <View>
-          <Image source={item.image} key={item.key} style={styles.imgStyle} />
+      {CarouselData.map((item) => (
+        <View key={item.id}>
+          <Image source={item.image} style={styles.imgStyle} />
         </View>
       ))}
     </Swiper>

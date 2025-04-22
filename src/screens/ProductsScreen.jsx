@@ -4,19 +4,22 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { ProductData } from "../data/ProductData";
 import PrimeLogo from "../assets/prime-logo.png";
 import { getRating } from "../utils/helpers";
+
 const ProductsScreen = () => {
   return (
     <SafeAreaView>
       <ScrollView style={styles.container}>
         <Text style={styles.title}>Results</Text>
         <Text style={styles.tagline}>
-          Price and other details may very based on product aside and color
+          Price and other details may vary based on product size and color
         </Text>
+
         {ProductData.map((item) => (
-          <View style={styles.productSection}>
+          <View key={item.id} style={styles.productSection}>
             <View style={styles.productImageSection}>
               <Image source={item.image} style={styles.productImage} />
             </View>
+
             <View style={styles.productDetailSection}>
               <Text style={styles.sponsored}>Sponsored</Text>
               <Text style={styles.productName}>{item.productName}</Text>
@@ -24,7 +27,7 @@ const ProductsScreen = () => {
               <View style={styles.row}>
                 <Text style={styles.rating}>{item.rating}</Text>
                 {getRating(item.rating)}
-                <Text style={styles.ratingCount}>{item.ratingCount}</Text>
+                <Text style={styles.ratingCount}>({item.ratingCount})</Text>
               </View>
 
               <View style={styles.row}>
@@ -35,6 +38,7 @@ const ProductsScreen = () => {
               <Text style={styles.cashback}>
                 Up to 5% cashback with Amazon Pay Credit Card
               </Text>
+
               <Image source={PrimeLogo} style={styles.logo} />
               <Text style={styles.deliveryBy}>
                 Free delivery by{" "}
@@ -75,8 +79,9 @@ const styles = StyleSheet.create({
   },
   productImageSection: {
     width: "40%",
-    backgroundColor: "#dddddd",
+    backgroundColor: "#f5f5f5",
     justifyContent: "center",
+    alignItems: "center",
   },
   productDetailSection: {
     width: "60%",
@@ -84,12 +89,12 @@ const styles = StyleSheet.create({
   },
   sponsored: {
     fontSize: 11,
-    color: "#000000",
+    color: "#000",
     fontWeight: "bold",
   },
   productName: {
     fontSize: 11,
-    color: "#000000",
+    color: "#000",
     lineHeight: 18,
   },
   row: {
@@ -100,20 +105,22 @@ const styles = StyleSheet.create({
   rating: {
     fontSize: 10,
     color: "#017185",
-    marginTop: 5,
+    marginRight: 3,
   },
   ratingCount: {
     fontSize: 10,
     color: "#017185",
-    marginTop: 5,
+    marginLeft: 4,
   },
   price: {
     fontSize: 16,
-    color: "#000000",
+    color: "#000",
   },
   crossOutText: {
     fontSize: 10,
     color: "gray",
+    marginLeft: 6,
+    textDecorationLine: "line-through",
   },
   cashback: {
     fontSize: 9,
