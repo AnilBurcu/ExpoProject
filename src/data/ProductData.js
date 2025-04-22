@@ -17,10 +17,10 @@ export const ProductData = [
       "Samsung Galaxy M04 Light Green, 4GB Ram, 64GB Storage | Upto 8GB RAM | 5000 MAH Battery",
     rating: 3.9,
     ratingCount: "6,080",
-    price: "17,299.00",
+    price: "₺17,299.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹22,299.00
+        ₺22,299.00
       </Text>
     ),
     deliveryBy: "Saturday, 17 June",
@@ -31,10 +31,10 @@ export const ProductData = [
     productName: "Apple iPhone 12 Pro Max",
     rating: 4.8,
     ratingCount: "15,380",
-    price: "1,29,999.00",
+    price: "₺1,29,999.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹1,39,999.00
+        ₺1,39,999.00
       </Text>
     ),
     deliveryBy: "Sunday, 18 June",
@@ -45,10 +45,10 @@ export const ProductData = [
     productName: "Sony WH-1000XM4 Wireless Noise Cancelling Headphones",
     rating: 4.7,
     ratingCount: "9,450",
-    price: "24,999.00",
+    price: "₺24,999.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹29,999.00
+        ₺29,999.00
       </Text>
     ),
     deliveryBy: "Monday, 19 June",
@@ -59,10 +59,10 @@ export const ProductData = [
     productName: 'Samsung 55" QLED 4K Smart TV',
     rating: 4.6,
     ratingCount: "12,345",
-    price: "74,999.00",
+    price: "₺74,999.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹84,999.00
+        ₺84,999.00
       </Text>
     ),
     deliveryBy: "Tuesday, 20 June",
@@ -73,10 +73,10 @@ export const ProductData = [
     productName: "Canon EOS R6 Mirrorless Camera",
     rating: 4.9,
     ratingCount: "6,780",
-    price: "1,79,999.00",
+    price: "₺1,79,999.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹1,99,999.00
+        ₺1,99,999.00
       </Text>
     ),
     deliveryBy: "Wednesday, 21 June",
@@ -87,10 +87,10 @@ export const ProductData = [
     productName: "Dell XPS 15 Laptop",
     rating: 4.5,
     ratingCount: "3,890",
-    price: "1,34,999.00",
+    price: "₺1,34,999.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹1,49,999.00
+        ₺1,49,999.00
       </Text>
     ),
     deliveryBy: "Thursday, 22 June",
@@ -101,10 +101,10 @@ export const ProductData = [
     productName: 'LG 32" Ultragear Gaming Monitor',
     rating: 4.3,
     ratingCount: "5,210",
-    price: "34,999.00",
+    price: "₺34,999.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹39,999.00
+        ₺39,999.00
       </Text>
     ),
     deliveryBy: "Friday, 23 June",
@@ -116,10 +116,10 @@ export const ProductData = [
       "Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers, IWP Technology, 650mAh Charging Case",
     rating: 4.9,
     ratingCount: "6,780",
-    price: "1,79,999.00",
+    price: "₺1,79,999.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹1,99,999.00
+        ₺1,99,999.00
       </Text>
     ),
     deliveryBy: "Wednesday, 21 June",
@@ -131,10 +131,10 @@ export const ProductData = [
       "Wireless Gaming Keyboard and Mouse Combo with 87 Key Rainbow LED Backlight Rechargeable 3800mAh Battery Mechanical Feel Anti-ghosting Ergonomic Waterproof RGB Mute Mice for Computer PC Gamer",
     rating: 4.5,
     ratingCount: "3,890",
-    price: "1,34,999.00",
+    price: "₺1,34,999.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹1,49,999.00
+        ₺1,49,999.00
       </Text>
     ),
     deliveryBy: "Thursday, 22 June",
@@ -146,10 +146,10 @@ export const ProductData = [
       "Fossil Gen 6 Smartwatch - Price, Design, Performance and Display",
     rating: 4.3,
     ratingCount: "5,210",
-    price: "34,999.00",
+    price: "₺34,999.00",
     crossOutText: (
       <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
-        ₹39,999.00
+        ₺39,999.00
       </Text>
     ),
     deliveryBy: "Friday, 23 June",
